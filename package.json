@@ -12,6 +12,7 @@
     "react-test-renderer": "16.0.0-alpha.12"
   },
   "scripts": {
+    "postinstall": "#react-native link && rnpm link",
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
