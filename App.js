@@ -5,6 +5,7 @@ export default class App extends React.Component {
   render() {
     console.log('render!');
     return (
+      /*
       <View style={styles.container}>
         <Text>Open up App.js to edit the app!</Text>
         <Text>Shake your phone to open the developer menu.</Text>
@@ -18,6 +19,12 @@ export default class App extends React.Component {
           onError={e => console.log(e)}
         />
       </View>
+      */
+      <View style={styles.container}>
+        <Text>Open up App.js to edit the app!</Text>
+        <Text>Shake your phone or Cmd-M to open the developer menu.</Text>
+        <WebView style={styles.video} source={{ uri: 'https://www.youtube.com/embed/ZZ5LpwO-An4?rel=0&autoplay=0&showinfo=0&controls=0' }} />
+      </View>
     );
   }
 }
@@ -25,8 +32,14 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ccc',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  video: {
+    width: 100,
+    height: 100,
+    borderWidth: 0.5,
+    borderColor: '#d6d7da',
+  }
 });
