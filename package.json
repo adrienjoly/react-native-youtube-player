@@ -12,8 +12,9 @@
     "react-test-renderer": "16.0.0-alpha.12"
   },
   "scripts": {
-    "postinstall": "#react-native link && rnpm link",
+    "postinstall": "react-native link",
     "start": "react-native start",
+    "android-emulator": "emulator -avd android-nexus-one-emu",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "test": "node node_modules/jest/bin/jest.js --watch"
@@ -23,7 +24,6 @@
   },
   "dependencies": {
     "react": "16.0.0-alpha.12",
-    "react-native": "^0.48.4",
-    "react-native-youtube": "^1.0.0"
+    "react-native": "^0.48.4"
   }
 }
